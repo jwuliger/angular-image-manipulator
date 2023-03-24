@@ -1,0 +1,13 @@
+<span class="container-fluid">
+    <input type="file" (change)="onFileSelected($event)" />
+    <canvas #imageCanvas></canvas><br /><br />
+    <chrome-picker
+        [(color)]="selectedColor"
+        (colorChange)="changeColor()"
+    ></chrome-picker
+    ><br />
+
+    <button (click)="rotateImage()" class="btn btn-warning">
+        Rotate Image
+    </button>
+</span>
